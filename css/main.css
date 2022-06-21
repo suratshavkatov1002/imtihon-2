@@ -246,6 +246,7 @@ template {
 html {
   scroll-behavior: smooth;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -827,6 +828,7 @@ img {
   }
   .services__matnlar-wrapper {
     text-align: center;
+    margin: auto;
   }
 }
 
@@ -838,6 +840,11 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.router__wrapper {
+  max-width: 471px;
+  width: 100%;
 }
 
 .router__item {
@@ -853,7 +860,177 @@ img {
   margin-bottom: 155px;
 }
 
+.router__item:nth-child(2n) .router__imglar {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.router__item:nth-child(2n) .router__imglar::before {
+  left: calc(-200% - 128px);
+}
+
+.router__item:nth-child(2n) .router__imglar::after {
+  bottom: 70%;
+  left: -110%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.router__item:last-child .router__imglar::after {
+  top: 66px;
+  left: 0;
+  -webkit-transform: translateX(224px);
+          transform: translateX(224px);
+}
+
+.router__heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #495567;
+  margin-bottom: 24px;
+}
+
+.router__text {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-bottom: 40px;
+}
+
+.router__imglar {
+  position: relative;
+}
+
+.router__imglar::before {
+  content: "";
+  display: inline-block;
+  width: 445px;
+  height: 445px;
+  background-color: #E5ECF4;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(calc(100% + 64px));
+          transform: translateX(calc(100% + 64px));
+}
+
+.router__imglar::after {
+  content: "";
+  display: inline-block;
+  width: 734px;
+  height: 138px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(-131px);
+          transform: translateX(-131px);
+  background-image: url("./../../imgs/opa_strelka.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .router__img {
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .router__container {
+    margin-bottom: 104px;
+  }
+  .router__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .router__item:nth-child(2n) .router__imglar {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .router__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 573px;
+    width: 100%;
+  }
+  .router__heading {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .router__text {
+    text-align: center;
+    max-width: 573px;
+  }
+  .router__imglar::before {
+    display: none;
+  }
+  .router__img {
+    margin-bottom: 56px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .router__container {
+    margin-bottom: 120px;
+  }
+  .router__item {
+    margin-bottom: 120px;
+  }
+  .router__item:nth-child(1) .router__imglar::after {
+    top: 45%;
+    left: 102px;
+  }
+  .router__item:nth-child(2) .router__imglar::after {
+    top: -3px;
+    left: -487px;
+  }
+  .router__item:nth-child(3) .router__imglar::after {
+    top: 12px;
+    left: -113px;
+  }
+  .router__wrapper {
+    max-width: 311px;
+    width: 100%;
+  }
+  .router__heading {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 311px;
+  }
+  .router__text {
+    text-align: center;
+    max-width: 311px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .router__img {
+    margin-bottom: 56px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
