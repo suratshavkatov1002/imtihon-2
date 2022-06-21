@@ -1,0 +1,14 @@
+@mixin btn{
+    background: none;
+    border: none;
+    background-color: #FCB72B;
+    color: #FFFFFF;
+    padding: 14px 39px;
+    cursor: pointer;
+}
+
+@mixin df-ai-jc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
