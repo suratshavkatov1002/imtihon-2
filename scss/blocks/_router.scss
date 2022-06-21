@@ -1,0 +1,52 @@
+.router {
+    
+    // .router__container
+    
+    &__container {
+        margin-bottom: 200px;
+    }
+    
+    // .router__list
+    
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    &__wrapper{
+
+    }
+    
+    &__item {
+        @include df-ai-jc;
+        margin-bottom: 155px;
+    }
+    
+    // .router__heading
+    
+    &__heading {
+    }
+    
+    // .router__text
+    
+    &__text {
+    }
+    
+    // .router__button
+    
+    &__button {
+    }
+    
+    // .router__imglar
+    
+    &__imglar {
+    }
+    
+    // .router__img
+    
+    &__img {
+        border-radius: 50%;
+    }
+}
+
