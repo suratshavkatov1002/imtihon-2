@@ -1,0 +1,261 @@
+.hero {
+    
+    // .hero__container
+    
+    &__container {
+        padding-top: 152px;
+        padding-bottom: 153px;
+        margin-bottom: 161px;
+    }
+    
+    // .hero__wrapper
+    
+    &__wrapper {
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    // .hero__heading
+    
+    &__heading {
+        margin: 0;
+        padding: 0;
+        font-family: 'Space Mono';
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+        letter-spacing: -2.5px;
+    }
+    
+    // .hero__text
+    
+    &__text {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        margin-left: 95px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        
+        &::before{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            transform: translateY(-50%);
+            right: calc(100% + 57px);
+            width: 500px;
+            height: 15px;
+            background-color: $yellow;
+            
+        }
+        
+        &::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 447px;
+            height: 138px;
+            top: 50%;
+            left: 100%;
+            transform: translate(57px, -11px);
+            background-image: url("./../../imgs/hero_strelka.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    
+    // .hero__button
+    
+    &__button {
+        margin-left: 95px;
+        max-width: 180px;
+        width: 100%;
+    }
+}
+
+.container-big {
+    background-image: url("./../imgs/hero-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        background-image: url("./../imgs/hero-banner@2x.jpg"); 
+        
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .hero {
+        
+        // .hero__container
+        
+        &__container {
+            padding-top: 137px;
+            padding-bottom: 217px;
+            padding-right: 97px;
+            padding-left: 97px;
+            margin-bottom: 122px;
+        }
+        
+        
+        
+        &__wrapper {
+            position: relative;
+            max-width: 573px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            gap: 0;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                display: inline-block;
+                width: 447px;
+                height: 138px;
+                top: 100%;
+                right: 55%;
+                transform: translateY(30px);
+                background-image: url("./../imgs/hero_strelka.svg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        
+        // .hero__heading
+        
+        &__heading {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        // .hero__text
+        
+        &__text {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 32px;
+            &::before{
+                display: none;
+            }
+            
+            &::after{
+                display: none;
+            }
+        }
+        
+        // .hero__button
+        
+        &__button {
+            margin: 0;
+        }
+    }
+    
+}
+
+.container-big {
+    background-image: url("./../imgs/hero-banner1000.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        background-image: url("./../imgs/hero-banner1000@2x.jpg"); 
+        
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .hero {
+        
+        // .hero__container
+        
+        &__container {
+            margin: 0;
+            padding: 115px  32px 179px 32px;
+            margin-bottom: 120px;
+        }
+        
+        // .hero__wrapper
+        
+        &__wrapper {
+            max-width: 311px;
+            width: 100%;
+            gap: 0;
+            
+            &::after{
+                top: 100%;
+                right: 55%;
+                transform: translateY(0px);
+                
+            }
+        }
+        
+        // .hero__heading
+        
+        &__heading {
+           text-align: center;
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 24px;
+        }
+        
+        // .hero__text
+        
+        &__text {
+           text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 34px;
+        }
+        
+        // .hero__button
+        
+        &__button {
+        }
+    }
+    
+}
+
+.container-big {
+    background-image: url("./../../imgs/hero-banner375.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+        
+        background-image: url("./../../imgs/hero-banner375@2x.jpg"); 
+        
+    }
+}
+

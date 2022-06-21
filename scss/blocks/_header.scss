@@ -56,6 +56,14 @@
         font-size: 15px;
         line-height: 25px;
         color:$dim_grey;
+
+        &:hover{
+            color: $yellow
+        }
+
+        &:active{
+           opacity: 0.5;
+        }
     }
 
     // .header__button
@@ -101,11 +109,7 @@
         width: 100%;
         z-index: 55 ;
         background-color: white;
-		// .header__container
-
-		&__container {
-            
-		}
+		
         
         &__container--active{
             .header__wrapper {
@@ -129,12 +133,6 @@
             position: absolute;
 		}
 
-		// .header__burger-img
-
-		&__burger-img {
-		}
-
-		// .header__burger-imgx
 
 		&__burger-imgx {
             display: none;
@@ -169,10 +167,6 @@
             
         }
         
-        &__navigation{
-            
-        }
-		// .header__list
 
 		&__list {
             flex-direction: column;
@@ -180,11 +174,7 @@
             align-items: flex-start;
 		}
 
-		// .header__item
-
-		&__item {
-		}
-
+		
 		// .header__item-link
 
 		&__item-link {
@@ -200,8 +190,7 @@
 		}
     }
 
-}
-
-main{
-    padding-top: 64px;
+    main{
+        padding-top: 64px;
+    }
 }
